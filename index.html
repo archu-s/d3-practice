@@ -13,6 +13,17 @@
         border: 1px solid #bbb;
       }
     </style>
+    
+    <script type="module">
+
+    import {csv} from "https://cdn.skypack.dev/d3-fetch@3";
+
+   csv("/path/to/file.csv").then((data) => {
+     console.log(data); // [{"Hello": "world"}, …]
+    });
+
+</script>
+
   </head>
   <body>
     <svg width="500" height="300">
