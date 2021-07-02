@@ -14,15 +14,15 @@
       }
     </style>
     
-    <script type="module">
+    <script src="https://cdn.jsdelivr.net/npm/d3-fetch@3"></script>
+<script>
 
-    import {csv} from "https://cdn.skypack.dev/d3-fetch@3";
-
-   csv("/path/to/file.csv").then((data) => {
-     console.log(data); // [{"Hello": "world"}, …]
-    });
+d3.csv("/path/to/file.csv").then((data) => {
+  console.log(data); // [{"Hello": "world"}, …]
+});
 
 </script>
+
 
   </head>
   <body>
