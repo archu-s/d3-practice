@@ -164,7 +164,7 @@ function type(d) {
     };    
 }
 
-d3.csv('data/movies.csv', type).then(data => {
+d3.csv('movies.csv', type).then(data => {
     //console.log("Movies csv:", data);
     ready(data);
 });
