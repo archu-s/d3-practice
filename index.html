@@ -1,46 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>SVG</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="//unpkg.com/d3"></script>
 
-    <style type="text/css">
-      body {
-        font-family: Avenir, sans-serif;
-      }
-      svg {
-        border: 1px solid #bbb;
-      }
-    </style>
-    
-    <script src="https://cdn.jsdelivr.net/npm/d3-fetch@3"></script>
-    <!--script src="https://d3js.org/d3-dsv.v2.min.js"></script>
-<script src="https://d3js.org/d3-fetch.v2.min.js"></script-->
-<script>
-
-d3.csv("/path/to/file.csv").then((data) => {
-  console.log(data); // [{"Hello": "world"}, …]
-});
-
-</script>
-    
-    
-
-
-  </head>
-  <body>
-    <svg width="500" height="300">
-      <g transform="translate(100, 100)">
-        <line x2="200" stroke="black" />
-        <circle cx="200" r="3" />
-        <text y="-10">Lolli 1</text>
-      </g>
-      <g transform="translate(100, 200)">
-        <line x2="100" stroke="black" />
-        <circle cx="100" r="3" />
-        <text y="-10">Lolli 2</text>
-      </g>
-    </svg>
-  </body>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- This is your chart's container -->
+    <div class="bar-chart-container"></div>
+    <!-- Loading in your Javascript logic -->
+    <script src="app.js"></script>
+</body>
 </html>
