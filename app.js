@@ -165,6 +165,6 @@ function type(d) {
 }
 
 d3.csv('movies.csv', type).then(data => {
-    //console.log("Movies csv:", data);
+    console.log("Movies csv:", data);
     ready(data);
 });
